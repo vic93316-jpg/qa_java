@@ -6,7 +6,7 @@ public class Lion {
     private final boolean hasMane;
     private final Feline feline;
 
-    // Основной конструктор – принимает и пол, и экземпляр Feline
+
     public Lion(String sex, Feline feline) throws Exception {
         this.feline = feline;
         if ("Самец".equals(sex)) {
@@ -19,14 +19,16 @@ public class Lion {
     }
 
     public int getKittens() {
+
         return feline.getKittens();
     }
 
     public boolean doesHaveMane() {
+
         return hasMane;
     }
 
     public List<String> getFood() throws Exception {
-        return feline.eatMeat();
+        return feline.getFood("Хищник");
     }
 }

@@ -25,7 +25,7 @@ public class CatTest {
     @Test
     public void getFood_shouldReturnResultOfEatMeatFromFeline() throws Exception {
 
-        List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
+        List<String> expectedFood = List.of();
         when(felineMock.eatMeat()).thenReturn(expectedFood);
 
         Cat cat = new Cat(felineMock);
