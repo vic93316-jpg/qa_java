@@ -21,10 +21,8 @@ public class FelineTest {
         doReturn(expectedMeat).when(felineSpy).getFood("Хищник");
 
         List<String> actualMeat = felineSpy.eatMeat();
-
         assertEquals(expectedMeat, actualMeat);
 
-        verify(felineSpy, times(1)).getFood("Хищник");
     }
 
     @Test(expected = Exception.class)

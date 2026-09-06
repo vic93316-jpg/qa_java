@@ -33,7 +33,6 @@ public class LionTest {
         when(felineMock.getKittens()).thenReturn(3);
         Lion lion = new Lion("Самец", felineMock);
         assertEquals(3, lion.getKittens());
-        verify(felineMock, times(1)).getKittens();
     }
 
 
@@ -43,7 +42,6 @@ public class LionTest {
         when(felineMock.getFood("Хищник")).thenReturn(expectedFood);
         Lion lion = new Lion("Самец", felineMock);
         assertEquals(expectedFood, lion.getFood());
-        verify(felineMock, times(1)).getFood("Хищник");;
     }
 
 

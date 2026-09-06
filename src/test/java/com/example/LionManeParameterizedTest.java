@@ -27,6 +27,7 @@ public class LionManeParameterizedTest {
         });
     }
 
+
     @Test
     public void lion_shouldHaveCorrectManeBasedOnSex() throws Exception {
         Feline feline = new Feline();

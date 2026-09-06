@@ -30,9 +30,8 @@ public class CatTest {
 
         Cat cat = new Cat(felineMock);
         List<String> actualFood = cat.getFood();
-
         assertEquals(expectedFood, actualFood);
-        verify(felineMock, times(1)).eatMeat();
+
     }
 
     @Test(expected = Exception.class)

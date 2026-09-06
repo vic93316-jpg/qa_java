@@ -13,6 +13,7 @@ public class Cat {
         return "Мяу";
     }
 
+
     public List<String> getFood() throws Exception {
         return predator.eatMeat();
     }

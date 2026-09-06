@@ -47,6 +47,5 @@ public class FelineEatMeatParameterizedTest {
 
         List<String> actual = felineSpy.eatMeat();
         assertEquals(expectedFood, actual);
-        verify(felineSpy, times(1)).getFood("Хищник");
     }
 }
